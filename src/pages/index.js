@@ -5,6 +5,12 @@ import Search from "../components/Search";
 import Tile from "../components/Tile";
 import BottomMenu from "../components/BottomMenu";
 
+const triggerPopup = () => {
+  alert(
+    "This functionality is not available yet, thank you for your interest! ;)"
+  );
+};
+
 export default function Home() {
   return (
     <div>
@@ -43,20 +49,23 @@ export default function Home() {
             icon="/assets/images/play_game.svg"
             title="Play a game"
             route="#"
+            handleClick={triggerPopup}
           />
           <Tile
             icon="/assets/images/buy_honey.svg"
             title="Buy honey"
             route="#"
+            handleClick={triggerPopup}
           />
           <Tile
             icon="/assets/images/for_beekeepers.svg"
             title="For beekeepers"
             route="#"
+            handleClick={triggerPopup}
           />
         </div>
 
-        <BottomMenu />
+        <BottomMenu handleClick={triggerPopup} />
       </div>
     </div>
   );
