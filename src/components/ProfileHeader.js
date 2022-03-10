@@ -3,7 +3,7 @@ import Image from "next/image";
 const ProfileHeader = () => {
   return (
     <div className="flex p-8 items-center">
-      <h1 className="text-base font-medium">Hello, John!</h1>
+      <h1 className="text-xl font-medium pr-2 text-black-txt">Hello, John!</h1>
 
       <Image
         src="/assets/images/adopt.svg"
