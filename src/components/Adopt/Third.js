@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Third = () => {
   return (
@@ -6,14 +7,18 @@ const Third = () => {
       <div className="grid grid-rows-3 justify-items-center">
         <h1 className="text-black-txt">Choose your payment method</h1>
         <div className="w-full">
-          <button className="bg-white w-full border rounded drop-shadow-sm pt-2 h-12">
-            <Image
-              src="/assets/images/pay_pal.svg"
-              alt="PayPal"
-              width={80}
-              height={22}
-            />
-          </button>
+          <Link href="/adoptedBee">
+            <a>
+              <button className="bg-white w-full border rounded drop-shadow-sm pt-2 h-12">
+                <Image
+                  src="/assets/images/pay_pal.svg"
+                  alt="PayPal"
+                  width={80}
+                  height={22}
+                />
+              </button>
+            </a>
+          </Link>
         </div>
 
         <div className="w-full pt-5">
