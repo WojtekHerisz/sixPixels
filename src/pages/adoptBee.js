@@ -9,7 +9,6 @@ import BottomMenu from "../components/BottomMenu";
 
 const AdoptBee = () => {
   const [step, setStep] = useState(1);
-  console.log(step);
 
   const getComponent = () => {
     switch (step) {
