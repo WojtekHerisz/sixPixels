@@ -14,9 +14,12 @@ module.exports = {
         "moon-yellow": "#FCBD17",
         "green-envy": "#7DA783",
       },
-    },
-    borderRadius: {
-      DEFAULT: "20px",
+      fontFamili: {
+        poppins: "Poppins, sans-serif",
+      },
+      borderRadius: {
+        DEFAULT: "20px",
+      },
     },
   },
   plugins: [],

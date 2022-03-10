@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-const Search = () => {
+const Search = ({ label = "Search for an apiary in your area" }) => {
   return (
     <div className="flex flex-col p-4">
       <label className="block text-base font-small text-black-txt pl-4">
-        Search for an apiary in your area
+        {label}
       </label>
 
       <div className="flex items-center mt-2 relative border rounded bg-white h-12">
