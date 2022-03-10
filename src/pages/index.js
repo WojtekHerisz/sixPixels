@@ -16,7 +16,7 @@ export default function Home() {
 
       <div>
         <div className="flex justify-end">
-          <Link href="#">
+          <Link href="/login">
             <a className="px-6 py-1 m-4 border border-transparent text-base font-medium rounded text-white bg-moon-yellow hover:bg-[#FDCA45] md:py-4 md:text-lg md:px-10">
               Sign up
             </a>
@@ -34,12 +34,25 @@ export default function Home() {
 
         <Search />
         <div className="grid grid-cols-2">
-          <Tile icon="/assets/images/adopt_bee.svg" title="Adopt a bee" />
-          <Tile icon="/assets/images/play_game.svg" title="Play a game" />
-          <Tile icon="/assets/images/buy_honey.svg" title="Buy honey" />
+          <Tile
+            icon="/assets/images/adopt_bee.svg"
+            title="Adopt a bee"
+            route="/adoptBee"
+          />
+          <Tile
+            icon="/assets/images/play_game.svg"
+            title="Play a game"
+            route="#"
+          />
+          <Tile
+            icon="/assets/images/buy_honey.svg"
+            title="Buy honey"
+            route="#"
+          />
           <Tile
             icon="/assets/images/for_beekeepers.svg"
             title="For beekeepers"
+            route="#"
           />
         </div>
 
