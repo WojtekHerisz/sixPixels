@@ -91,27 +91,26 @@ const First = ({ setStep }) => {
         </div>
       )}
       {selected && (
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-2 p-4">
           <Image src={MapSm} alt="map" />
           <div className="flex flex-col p-3 ">
-            <span className="text-bold">The best honey garden</span>
-            <br />
+            <span className="font-bold">The best honey garden</span>
             <span>phone: +123456789</span>
             <span>https://somecoolwebsite.pl</span>
-            <span>Pokoju 62</span>
-            <span>42-700 Lubliniec</span>
+            <span>Pokoju 62, 42-700 Lubliniec</span>
           </div>
           <div className="flex flex-col p-3 ">
             <span>No of bees: 100200</span>
-            <span>No of bees to adopt: 53252</span>
-            <br />
+            <span>
+              No of bees to adopt: <span className="font-bold">53252</span>
+            </span>
             <span>Types of honey</span>
-            <ul>
+            <ul className="list-disc list-inside">
               <li>Acacia</li>
-              <li>Multiflourous</li>
             </ul>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-between">
+            <Image src={Bee} alt="beeeeeee" />
             <Image src={Bee} alt="beeeeeee" />
           </div>
           <div className="col-span-2 flex flex-col">
@@ -122,7 +121,9 @@ const First = ({ setStep }) => {
             >
               Adopt bee from this hive
             </button>
-            <span>and get 5% discount on honey from this hive</span>
+            <span className="font-sm">
+              and get 5% discount on honey from this hive
+            </span>
           </div>
         </div>
       )}
