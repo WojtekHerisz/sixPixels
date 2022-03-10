@@ -4,7 +4,18 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "black-txt": "#333333",
+        "placeholder-txt": "#767676",
+        "alice-blue": "#F6FAFD",
+        "moon-yellow": "#FCBD17",
+        "green-envy": "#7DA783",
+      },
+    },
+    borderRadius: {
+      DEFAULT: "20px",
+    },
   },
   plugins: [],
 };
