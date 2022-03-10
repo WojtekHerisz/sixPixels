@@ -3,6 +3,7 @@ const { MongoClient } = require("mongodb");
 let uri;
 try {
   uri = process.env.MONGOURI;
+  console.log(`Mongo URI set to ${uri}`);
 } catch (error) {
   console.error(
     'There is no process.env.MONGOURI specified! Use $env:MONGOURI="xxxxxxxx" in powershell before running app'
