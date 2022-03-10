@@ -2,7 +2,7 @@ import { useState } from "react";
 import Stepper from "../components/Stepper";
 import withAuth from "../components/withAuth";
 import Header from "../components/Header";
-import First from "../components/Adopt/first";
+import First from "../components/Adopt/First";
 import Second from "../components/Adopt/Second";
 import Third from "../components/Adopt/Third";
 import BottomMenu from "../components/BottomMenu";
