@@ -14,7 +14,7 @@ const AdoptBee = () => {
   const getComponent = () => {
     switch (step) {
       case 1:
-        return <First />;
+        return <First setStep={setStep} />;
       case 2:
         return <Second setStep={setStep} />;
       case 3:

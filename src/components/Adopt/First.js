@@ -2,10 +2,12 @@ import Image from "next/image";
 import Search from "../Search";
 import Slider from "../Slider";
 import Map from "../../../public/assets/images/map.png";
+import MapSm from "../../../public/assets/images/mapSm.png";
 import Marker from "../../../public/assets/images/marker.svg";
+import Bee from "../../../public/assets/images/bee.svg";
 import { useState } from "react";
 
-const First = () => {
+const First = ({ setStep }) => {
   const [choosen, setChoosen] = useState();
   const [selected, setSelected] = useState(false);
 
@@ -89,16 +91,38 @@ const First = () => {
         </div>
       )}
       {selected && (
-        <div>
-          <div className="flex flex-col p-3 border border-1 w-48 border-bee-brown bg-white rounded z-10">
+        <div className="grid grid-cols-2">
+          <Image src={MapSm} alt="map" />
+          <div className="flex flex-col p-3 ">
             <span className="text-bold">The best honey garden</span>
-            <span className="italic">Sells honey</span>
             <br />
-            <span>No of bees: 12</span>
-            <span>No of bees to adopt: 0</span>
-            <button type="button" className="text-white rounded bg-bee">
-              Select
+            <span>phone: +123456789</span>
+            <span>https://somecoolwebsite.pl</span>
+            <span>Pokoju 62</span>
+            <span>42-700 Lubliniec</span>
+          </div>
+          <div className="flex flex-col p-3 ">
+            <span>No of bees: 100200</span>
+            <span>No of bees to adopt: 53252</span>
+            <br />
+            <span>Types of honey</span>
+            <ul>
+              <li>Acacia</li>
+              <li>Multiflourous</li>
+            </ul>
+          </div>
+          <div className="flex items-center justify-center">
+            <Image src={Bee} alt="beeeeeee" />
+          </div>
+          <div className="col-span-2 flex flex-col">
+            <button
+              type="button"
+              className="text-white rounded bg-bee font-lg"
+              onClick={() => setStep(2)}
+            >
+              Adopt bee from this hive
             </button>
+            <span>and get 5% discount on honey from this hive</span>
           </div>
         </div>
       )}
