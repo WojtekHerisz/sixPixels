@@ -1,9 +1,11 @@
+import { useRouter } from "next/router";
 import { useState } from "react";
 import useFetch from "../hooks/useFetch";
 
 const Login = () => {
   const { login } = useFetch();
-  const [loginData, setLoginData] = useState({ email: "", password: "" });
+  const Router = useRouter();
+  const [loginData, setLoginData] = useState({ mail: "", password: "" });
 
   const handleChange = (e) => {
     const value = e.target.value;
@@ -14,26 +16,34 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await login(loginData);
+    const redirect = await login(loginData);
+    console.log(redirect);
+    if (redirect) Router.push(redirect);
   };
 
   return (
     <main className="flex items-center justify-center h-screen">
       <form
         onSubmit={handleSubmit}
-        className="flex p-10 border-2 border-bee rounded items-center justify-around flex-col"
+        className="flex p-10 border-2 border-bee rounded items-left justify-around flex-col"
       >
-        <lanel className="">Email</lanel>
-        <input value={loginData.email} name="email" onChange={handleChange} />
-        <lanel>Password</lanel>
+        <label>Email</label>
         <input
-          type="password"
-          value={loginData.password}
-          name="password"
+          className="mb-2"
+          value={loginData.mail}
+          name="mail"
           onChange={handleChange}
         />
+        <label>Password</label>
+        <input
+          type="password"
+          name="password"
+          value={loginData.password}
+          onChange={handleChange}
+          className="mb-2"
+        />
 
-        <button type="submit" className="border-bee rounded">
+        <button type="submit" className="mt-10 border border-bee rounded">
           Login
         </button>
       </form>
