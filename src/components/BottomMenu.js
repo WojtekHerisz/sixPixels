@@ -3,7 +3,7 @@ import MenuButton from "./MenuButton";
 
 const BottomMenu = ({ handleClick }) => {
   return (
-    <div className="w-full sticky bottom-0 bg-white flex items-center justify-evenly pt-3 pb-3 rounded-t">
+    <div className="w-full fixed bottom-0 bg-white flex items-center justify-evenly pt-3 pb-3 rounded-t drop-shadow-2xl">
       <MenuButton icon="/assets/images/home.svg" title="Home" route="/" />
       <MenuButton
         icon="/assets/images/shop.svg"
