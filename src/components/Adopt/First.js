@@ -96,7 +96,7 @@ const First = ({ setStep }) => {
           <div className="flex flex-col p-3 ">
             <span className="font-bold">The best honey garden</span>
             <span>phone: +123456789</span>
-            <span>https://somecoolwebsite.pl</span>
+            <span>https://coolweb.pl</span>
             <span>Pokoju 62, 42-700 Lubliniec</span>
           </div>
           <div className="flex flex-col p-3 ">
