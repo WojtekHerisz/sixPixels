@@ -56,7 +56,7 @@ const AdoptedBee = () => {
         <span className="text-xs">
           Adopt more bees or make donations to unlock achievments!
         </span>
-        <h2 className="font-poppins font-semibold mt-18 mb-4">
+        <h2 className="font-poppins font-semibold mt-10 mb-4">
           My honey orders
         </h2>
         <div className="shadow-xl border border-1 border-gray-200 rounded text-gray-500 text-center p-4">
