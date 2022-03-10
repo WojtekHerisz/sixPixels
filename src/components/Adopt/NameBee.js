@@ -1,10 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 import { useState } from "react";
 
 const NameBee = () => {
   const [save, setSave] = useState(false);
-  console.log(save);
 
   return (
     <div>
@@ -47,7 +45,7 @@ const NameBee = () => {
       {save && (
         <>
           <div className="flex flex-col mx-auto">
-            <h1 className="font-medium text-black-txt">My Bees</h1>
+            <h1 className="font-medium text-black-txt mx-10 pb-2">My Bees</h1>
             <div className="bg-white w-5/6 border-1 drop-shadow-md rounded mx-auto flex flex-col">
               <div className="flex mx-4 mt-2">
                 <Image
@@ -57,8 +55,10 @@ const NameBee = () => {
                   height={73}
                 />
                 <div className="flex flex-col mx-2">
-                  <p className="text-[583412] font-[Allura] text-xl">Rosie</p>
-                  <div className="flex flex-col">
+                  <p className="text-[583412] font-[Allura] text-xl pb-2">
+                    Rosie
+                  </p>
+                  <div className="flex flex-col text-sm">
                     <p className="text-black-txt">
                       Pollen collected today: 130mg
                     </p>
@@ -68,6 +68,14 @@ const NameBee = () => {
                     <p className="text-black-txt">Distance covered: 16km</p>
                   </div>
                 </div>
+              </div>
+              <div className="mt-8 mb-2 mx-auto">
+                <Image
+                  src="/assets/images/plot.svg"
+                  alt="Plot"
+                  width={286}
+                  height={119}
+                />
               </div>
             </div>
           </div>
