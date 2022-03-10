@@ -1,9 +1,11 @@
 import Search from "../Search";
+import Slider from "../Slider";
 
 const First = () => {
   return (
-    <div>
+    <div className="">
       <Search label="" />
+      <Slider />
     </div>
   );
 };

@@ -3,7 +3,6 @@ import Stepper from "../components/Stepper";
 import withAuth from "../components/withAuth";
 import Header from "../components/Header";
 import First from "../components/Adopt/first";
-import Slider from "../components/Slider";
 
 const AdoptBee = () => {
   const [step, setStep] = useState(1);
@@ -24,8 +23,6 @@ const AdoptBee = () => {
 
       <Stepper current={step} handleClick={setStep} />
       {getComponent()}
-
-      <Slider />
     </main>
   );
 };
