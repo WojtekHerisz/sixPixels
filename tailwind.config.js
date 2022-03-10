@@ -14,7 +14,7 @@ module.exports = {
         "moon-yellow": "#FCBD17",
         "green-envy": "#7DA783",
       },
-      fontFamili: {
+      fontFamily: {
         poppins: "Poppins, sans-serif",
       },
       borderRadius: {
