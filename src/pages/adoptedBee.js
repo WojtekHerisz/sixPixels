@@ -1,6 +1,7 @@
 import ProfileHeader from "../components/ProfileHeader";
 import Image from "next/image";
 import Link from "next/link";
+import BottomMenu from "../components/BottomMenu";
 
 const AdoptedBee = () => {
   return (
@@ -62,6 +63,7 @@ const AdoptedBee = () => {
           27.02.22 | Acacia | 500ml | 80 PLN
         </div>
       </div>
+      <BottomMenu />
     </div>
   );
 };
