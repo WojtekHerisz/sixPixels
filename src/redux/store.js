@@ -6,7 +6,8 @@ import rootReducer from "./reducers";
 const middleware = [thunk];
 
 const composeEnhancers =
-  typeof window === "object"
+  typeof window === "object" &&
+  typeof window?.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ === "function"
     ? window?.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({})
     : compose;
 

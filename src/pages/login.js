@@ -1,6 +1,8 @@
 import { useState } from "react";
+import useFetch from "../hooks/useFetch";
 
 const Login = () => {
+  const { login } = useFetch();
   const [loginData, setLoginData] = useState({ email: "", password: "" });
 
   const handleChange = (e) => {
@@ -10,15 +12,18 @@ const Login = () => {
     setLoginData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = () => {};
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    await login(loginData);
+  };
 
   return (
     <main className="flex items-center justify-center h-screen">
       <form
         onSubmit={handleSubmit}
-        className="flex p-5 border-2 border-bee rounded items-center justify-around flex-col"
+        className="flex p-10 border-2 border-bee rounded items-center justify-around flex-col"
       >
-        <lanel>Email</lanel>
+        <lanel className="">Email</lanel>
         <input value={loginData.email} name="email" onChange={handleChange} />
         <lanel>Password</lanel>
         <input
@@ -27,6 +32,10 @@ const Login = () => {
           name="password"
           onChange={handleChange}
         />
+
+        <button type="submit" className="border-bee rounded">
+          Login
+        </button>
       </form>
     </main>
   );
