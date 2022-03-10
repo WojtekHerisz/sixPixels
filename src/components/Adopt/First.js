@@ -14,7 +14,7 @@ const First = () => {
   };
 
   return (
-    <div className="">
+    <div>
       <Search label="" />
       <Slider />
       {!selected && (
