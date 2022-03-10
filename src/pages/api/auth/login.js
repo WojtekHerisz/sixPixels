@@ -13,7 +13,7 @@ const handler = nc({
   if (req.body.mail && req.body.password) {
     mail = req.body.mail;
     password = req.body.password;
-    res.status(200).json({ error: false, mail, password, userId: "qwert1234" });
+    res.status(200).json({ error: false, mail, password, userId: "1" });
 
     console.log("yay");
   } else {
