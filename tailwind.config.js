@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         bee: "#FCBD17",
+        "bee-brown": "#583412",
         "black-txt": "#333333",
         "placeholder-txt": "#767676",
         "alice-blue": "#F6FAFD",
