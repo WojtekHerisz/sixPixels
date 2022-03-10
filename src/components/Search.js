@@ -18,7 +18,7 @@ const Search = () => {
         <div className="pr-4 pt-1">
           <Image
             src="/assets/images/search_icon.svg"
-            alt="logo"
+            alt="search_icon"
             width={22}
             height={22}
           />
@@ -28,7 +28,7 @@ const Search = () => {
       <div className="flex items-center pl-4 pt-2">
         <Image
           src="/assets/images/navigation_icon.svg"
-          alt="logo"
+          alt="navigation_icon"
           width={24}
           height={24}
         />
