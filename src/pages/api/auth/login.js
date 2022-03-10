@@ -13,8 +13,7 @@ const handler = nc({
   if (req.body.mail && req.body.password) {
     mail = req.body.mail;
     password = req.body.password;
-    if (mail.toLowerCase() === "beelover@mail.com" && password === "12345")
-      res.status(200).json({ error: false, mail, password, userId: "1" });
+    res.status(200).json({ error: false, mail, password, userId: "qwert1234" });
 
     console.log("yay");
   } else {
